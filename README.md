@@ -12,14 +12,72 @@ I build premium, data-dense interfaces for things that matter — currently a re
 
 <br />
 
-### 🛰 currently shipping
+### 🛰 currently building
 
-[**autotrade**](https://github.com/hyzr1/autotrader) — the data layer for Congressional trading and AI consensus.
+**autotrade** — the data layer for Congressional trading and AI consensus *(private, in active development)*
 
-- Every US House & Senate PTR disclosure, ingested daily from the House Clerk feed
+- Every US House & Senate PTR disclosure ingested daily from the House Clerk feed
 - Same prompt → 4 frontier models (GPT-5 · Claude Opus 4.8 · Gemini 2.5 · Grok 4) every Monday at 09:00 ET
 - Three full landing variants: **cream editorial** · **dark terminal** · **light Stripe-style**
-- Built with: Next.js 16 · Drizzle · Postgres · Tailwind v4 · Vercel
+- Built with: Next.js 16 · Drizzle · Postgres · Tailwind v4 · Vercel Fluid Compute
+
+<br />
+
+### 📦 selected open source
+
+<table>
+  <tr>
+    <td width="50%">
+      <a href="https://github.com/hyzr1/hyzrUI">
+        <img
+          src="https://github-readme-stats.vercel.app/api/pin/?username=hyzr1&repo=hyzrUI&bg_color=08060F&title_color=A78BFA&icon_color=F7D24A&text_color=ffffffaa&border_color=7C5FFF66&hide_border=false"
+          alt="hyzrUI"
+        />
+      </a>
+    </td>
+    <td width="50%">
+      <a href="https://github.com/hyzr1/hyperGL">
+        <img
+          src="https://github-readme-stats.vercel.app/api/pin/?username=hyzr1&repo=hyperGL&bg_color=08060F&title_color=A78BFA&icon_color=F7D24A&text_color=ffffffaa&border_color=7C5FFF66&hide_border=false"
+          alt="hyperGL"
+        />
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%">
+      <a href="https://github.com/hyzr1/project-spark">
+        <img
+          src="https://github-readme-stats.vercel.app/api/pin/?username=hyzr1&repo=project-spark&bg_color=08060F&title_color=A78BFA&icon_color=F7D24A&text_color=ffffffaa&border_color=7C5FFF66&hide_border=false"
+          alt="project-spark"
+        />
+      </a>
+    </td>
+    <td width="50%">
+      <a href="https://github.com/hyzr1/portfolio">
+        <img
+          src="https://github-readme-stats.vercel.app/api/pin/?username=hyzr1&repo=portfolio&bg_color=08060F&title_color=A78BFA&icon_color=F7D24A&text_color=ffffffaa&border_color=7C5FFF66&hide_border=false"
+          alt="portfolio"
+        />
+      </a>
+    </td>
+  </tr>
+</table>
+
+> **hyzrUI** ▸ 60+ source-first React primitives, token-driven theming, light + dark.
+> **hyperGL** ▸ customizable WebGL effects library with live documentation.
+> **project-spark** ▸ encrypted lecture vault, AES-128 HLS — useless without the key.
+> **portfolio** ▸ personal portfolio site.
+
+<br />
+
+### 🔭 also in the kitchen
+
+A handful of private projects exploring different problem spaces:
+
+- **pluto** — real-time gamma exposure, dealer positioning, volatility surfaces across every strike and expiration. 30+ views, one workspace.
+- **hyzrAI** — AI-powered platform letting businesses spin up custom web apps from scratch or fully customizable templates.
+- **saka** & **sparkzy-vault** — encrypted lecture vault systems, AES-128 HLS streaming.
 
 <br />
 
@@ -27,7 +85,7 @@ I build premium, data-dense interfaces for things that matter — currently a re
 
 ```
 language   ▸  TypeScript · Python · SQL
-frontend   ▸  Next.js · React · Tailwind v4 · Motion · Three.js
+frontend   ▸  Next.js · React · Tailwind v4 · Motion · Three.js · GSAP
 backend    ▸  Node · Drizzle ORM · Postgres · Supabase
 data       ▸  Yahoo Finance · House Clerk PTR · SEC EDGAR
 ai         ▸  GPT-5 · Claude · Gemini · Grok (multi-model consensus)
@@ -82,4 +140,4 @@ host       ▸  Vercel (Fluid Compute) · Cron jobs · BotID
 
 <br />
 
-<sub><i>this profile is hand-built in the same visual language as <a href="https://github.com/hyzr1/autotrader">autotrade</a> — warm-black, violet brand gradient, dot-matrix surface, restraint over decoration.</i></sub>
+<sub><i>this profile is hand-built in the same visual language as autotrade — warm-black, violet brand gradient, dot-matrix surface, restraint over decoration.</i></sub>

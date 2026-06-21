@@ -120,12 +120,10 @@
       the data layer for Congressional trading and AI consensus.
     </text>
 
-    <!-- Footer status row -->
+    <!-- Footer status row — single text element so the segments can't collide -->
     <g transform="translate(60, 290)" font-size="11" fill="rgba(255,255,255,0.45)" letter-spacing="2">
       <circle cx="-2" cy="-3" r="3" fill="#4ADE80"/>
-      <text x="10" y="0">SHIPPING · Next.js · Drizzle · Vercel</text>
-      <text x="270" y="0" fill="rgba(255,255,255,0.30)">·</text>
-      <text x="288" y="0">based in PH</text>
+      <text x="10" y="0">PH · NEXT · DRIZZLE · VERCEL · OPEN TO COLLABS</text>
     </g>
 
     <!-- Decorative tick marks bottom-left -->
