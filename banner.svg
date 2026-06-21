@@ -1,0 +1,200 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 360" role="img" aria-label="hyzr1 — building autotrade">
+  <!-- ============================================================
+       hyzr1 // profile banner
+       Hand-crafted in the autotrade dark-theme visual language:
+       warm-black base, dot-matrix surface, single flowing violet
+       ribbon, and a terminal-style status panel on the right.
+       Designed to be the centerpiece, not stock readme art.
+       ============================================================ -->
+
+  <defs>
+    <!-- The single ribbon gradient — pure violet brand family -->
+    <linearGradient id="ribbon" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%"   stop-color="#2A1B70"/>
+      <stop offset="25%"  stop-color="#4F39D8"/>
+      <stop offset="50%"  stop-color="#7C5FFF"/>
+      <stop offset="75%"  stop-color="#A78BFA"/>
+      <stop offset="100%" stop-color="#D4C2FF"/>
+    </linearGradient>
+
+    <linearGradient id="halo" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%"   stop-color="#4F39D8"/>
+      <stop offset="50%"  stop-color="#7C5FFF"/>
+      <stop offset="100%" stop-color="#A78BFA"/>
+    </linearGradient>
+
+    <linearGradient id="headlineFill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"  stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#B9B0E5"/>
+    </linearGradient>
+
+    <radialGradient id="anchor" cx="68%" cy="36%" r="55%">
+      <stop offset="0%"  stop-color="rgba(79,57,216,0.40)"/>
+      <stop offset="40%" stop-color="rgba(50,15,90,0.18)"/>
+      <stop offset="100%" stop-color="rgba(8,6,15,0)"/>
+    </radialGradient>
+
+    <!-- Dot-matrix surface pattern (terminal slate move) -->
+    <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="1" fill="rgba(255,255,255,0.06)"/>
+    </pattern>
+
+    <!-- Major gridlines every 4th dot (chart-axis feel) -->
+    <pattern id="grid" width="88" height="88" patternUnits="userSpaceOnUse">
+      <path d="M 88 0 L 0 0 0 88" fill="none" stroke="rgba(255,255,255,0.035)" stroke-width="1"/>
+    </pattern>
+
+    <!-- Mask so dots/grid fade at the edges -->
+    <radialGradient id="surfaceMask" cx="50%" cy="50%" r="55%">
+      <stop offset="0%" stop-color="#000"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0"/>
+    </radialGradient>
+    <mask id="fadeMask">
+      <rect width="1280" height="360" fill="url(#surfaceMask)"/>
+    </mask>
+
+    <filter id="blurXL" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="40"/>
+    </filter>
+    <filter id="blurL" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="14"/>
+    </filter>
+    <filter id="blurS" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2"/>
+    </filter>
+
+    <!-- Film grain via SVG turbulence -->
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" seed="7"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 1 0"/>
+    </filter>
+  </defs>
+
+  <!-- ─── Base canvas: warm-black with a hair of vertical tone shift ─── -->
+  <rect width="1280" height="360" fill="#08060F"/>
+  <rect width="1280" height="360" fill="url(#anchor)"/>
+
+  <!-- ─── Dot matrix + gridlines (masked to fade at edges) ─── -->
+  <g mask="url(#fadeMask)">
+    <rect width="1280" height="360" fill="url(#dots)"/>
+    <rect width="1280" height="360" fill="url(#grid)"/>
+  </g>
+
+  <!-- ─── THE RIBBON — single sweeping curve, multiple stacked passes ─── -->
+  <g style="mix-blend-mode: screen;">
+    <!-- Outer halo -->
+    <path d="M 1400,-80 C 1000,130 1000,300 600,360 C 250,420 350,560 -120,640"
+          stroke="url(#halo)" stroke-width="320" stroke-linecap="round" fill="none"
+          opacity="0.18" filter="url(#blurXL)"/>
+    <!-- Body -->
+    <path d="M 1400,-80 C 1000,130 1000,300 600,360 C 250,420 350,560 -120,640"
+          stroke="url(#ribbon)" stroke-width="160" stroke-linecap="round" fill="none"
+          opacity="0.32" filter="url(#blurL)"/>
+    <!-- Core -->
+    <path d="M 1400,-80 C 1000,130 1000,300 600,360 C 250,420 350,560 -120,640"
+          stroke="url(#ribbon)" stroke-width="60" stroke-linecap="round" fill="none"
+          opacity="0.40"/>
+    <!-- Silk spine -->
+    <path d="M 1395,-75 C 998,135 1002,305 602,362 C 252,422 352,562 -115,642"
+          stroke="white" stroke-width="1.5" stroke-linecap="round" fill="none"
+          opacity="0.32" filter="url(#blurS)"/>
+  </g>
+
+  <!-- ─── LEFT: identity + tagline ─── -->
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, monospace">
+    <!-- Top brackets -->
+    <text x="60" y="60" font-size="11" letter-spacing="3" fill="#A78BFA" opacity="0.7">
+      HYZR1 // KAYLEM
+    </text>
+
+    <!-- Massive headline -->
+    <text x="60" y="180"
+          font-family="Georgia, 'Times New Roman', serif"
+          font-size="84" font-weight="500" letter-spacing="-2"
+          fill="url(#headlineFill)">
+      building <tspan font-style="italic" font-weight="400">autotrade.</tspan>
+    </text>
+
+    <!-- Subhead -->
+    <text x="62" y="225" font-size="14" fill="rgba(255,255,255,0.65)" letter-spacing="0">
+      the data layer for Congressional trading and AI consensus.
+    </text>
+
+    <!-- Footer status row -->
+    <g transform="translate(60, 290)" font-size="11" fill="rgba(255,255,255,0.45)" letter-spacing="2">
+      <circle cx="-2" cy="-3" r="3" fill="#4ADE80"/>
+      <text x="10" y="0">SHIPPING · Next.js · Drizzle · Vercel</text>
+      <text x="270" y="0" fill="rgba(255,255,255,0.30)">·</text>
+      <text x="288" y="0">based in PH</text>
+    </g>
+
+    <!-- Decorative tick marks bottom-left -->
+    <g transform="translate(60, 325)" fill="rgba(167,139,250,0.55)">
+      <rect x="0" y="0" width="2" height="10"/>
+      <rect x="6" y="2" width="2" height="8"/>
+      <rect x="12" y="0" width="2" height="10"/>
+      <rect x="18" y="4" width="2" height="6"/>
+      <rect x="24" y="1" width="2" height="9"/>
+    </g>
+  </g>
+
+  <!-- ─── RIGHT: terminal status panel ─── -->
+  <g transform="translate(880, 56)">
+    <rect width="340" height="248" rx="8"
+          fill="rgba(255,255,255,0.025)"
+          stroke="rgba(255,255,255,0.10)" stroke-width="1"/>
+
+    <!-- Panel chrome -->
+    <g transform="translate(14, 16)">
+      <circle cx="0"  cy="0" r="4" fill="#FF5F57"/>
+      <circle cx="14" cy="0" r="4" fill="#FEBC2E"/>
+      <circle cx="28" cy="0" r="4" fill="#28C840"/>
+      <text x="48" y="4" font-family="ui-monospace, monospace" font-size="10"
+            fill="rgba(255,255,255,0.40)" letter-spacing="2">
+        /dev/desk
+      </text>
+      <text x="280" y="4" font-family="ui-monospace, monospace" font-size="10"
+            fill="rgba(74,222,128,0.85)">
+        ● online
+      </text>
+    </g>
+
+    <!-- Divider -->
+    <line x1="0" y1="36" x2="340" y2="36" stroke="rgba(255,255,255,0.08)"/>
+
+    <!-- Content rows -->
+    <g font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12">
+      <!-- Section header -->
+      <text x="14" y="62" fill="#A78BFA" font-size="10" letter-spacing="2">
+        // CURRENTLY
+      </text>
+
+      <text x="14" y="86" fill="rgba(255,255,255,0.85)">▸ autotrade — politician + AI</text>
+      <text x="14" y="106" fill="rgba(255,255,255,0.55)">  4 frontier models · 538 reps</text>
+
+      <text x="14" y="138" fill="#A78BFA" font-size="10" letter-spacing="2">
+        // STACK
+      </text>
+      <text x="14" y="160" fill="rgba(255,255,255,0.65)">  Next 16 · Drizzle · Tailwind v4</text>
+      <text x="14" y="178" fill="rgba(255,255,255,0.65)">  TypeScript · Vercel · Postgres</text>
+
+      <text x="14" y="210" fill="#F7D24A" font-size="10" letter-spacing="2">
+        // THESIS
+      </text>
+      <text x="14" y="230" fill="rgba(255,255,255,0.85)">
+        the disclosures were always public.
+      </text>
+    </g>
+  </g>
+
+  <!-- ─── Top hairline (very subtle) ─── -->
+  <line x1="0" y1="0" x2="1280" y2="0" stroke="rgba(255,255,255,0.06)"/>
+
+  <!-- ─── Grain overlay (very low opacity so it just adds tooth) ─── -->
+  <rect width="1280" height="360" opacity="0.08" filter="url(#grain)" style="mix-blend-mode: overlay;"/>
+
+  <!-- ─── Bottom hairline divider with hot pink accent dot ─── -->
+  <line x1="0" y1="359" x2="1280" y2="359" stroke="rgba(167,139,250,0.20)"/>
+  <circle cx="60" cy="359" r="3" fill="#A78BFA"/>
+  <circle cx="60" cy="359" r="8" fill="none" stroke="rgba(167,139,250,0.30)"/>
+</svg>
