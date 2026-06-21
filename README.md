@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./banner.svg" alt="hyzr1 — building autotrade. The data layer for Congressional trading and AI consensus." width="100%" />
+<img src="./banner-light.svg" alt="hyzr1 — building autotrade. The data layer for Congressional trading and AI consensus." width="100%" />
 
 </div>
 
