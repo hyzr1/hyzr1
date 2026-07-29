@@ -1,0 +1,12 @@
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+.claude/
+.codex/
+.chatgpt/
+.mcp.json
+CLAUDE.md
+CHATGPT.md
+AGENTS.md
+*.log
