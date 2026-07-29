@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/profile-banner.svg" alt="Kaylem — software systems and applied mathematics" width="100%" />
+  <img src="./assets/profile-banner.jpg" alt="A mathematical curve crossing a quiet architectural landscape" width="100%" />
 </p>
 
 <div align="center">
