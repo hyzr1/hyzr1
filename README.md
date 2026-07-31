@@ -1,5 +1,7 @@
 # Kaylem Kayastha
 
-Applied Mathematics student at UC Santa Cruz. I am interested in software engineering and machine learning.
+Applied Mathematics student at UC Santa Cruz and a full-stack developer focused on thoughtful UI and UX.
 
-I am currently working on [Hyzr](https://hyzr.ai) and getting better at Python, algorithms, and systems.
+I build with JavaScript, TypeScript, React, Next.js, Node.js, HTML, CSS, and Python. I enjoy turning ideas into polished, responsive products from the interface through the backend.
+
+Currently building [Hyzr](https://hyzr.ai) and working toward software engineering and machine learning.
